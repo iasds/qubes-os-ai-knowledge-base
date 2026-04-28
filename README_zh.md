@@ -1,6 +1,6 @@
-# Qubes OS Ultimate Guide
+# Qubes OS 终极指南
 
-**为 AI / LLM 准备的 Qubes OS 知识大全。** 将官方文档和社区精华合并为单一 Markdown 文件，方便 AI 一次性加载、检索、回答 Qubes 相关问题。
+**为 AI / LLM 准备的 Qubes OS 知识大全。** 将官方文档与社区精华合并为单一 Markdown 文件，方便 AI 一次性加载、检索、回答 Qubes 相关问题。
 
 ## 数据来源
 
@@ -29,6 +29,6 @@ cat qubes-guides.md
 grep -i "split gpg" qubes-guides.md
 ```
 
-## License
+## 许可
 
 原始内容 © Qubes OS Project。本仓库为教育和参考用途的衍生整理。
