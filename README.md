@@ -4,7 +4,7 @@
 
 ## What Is This?
 
-This is the **entire [Qubes OS official documentation](https://github.com/QubesOS/qubes-doc)** (191 pages, ~1.5 MB) converted from RST to clean Markdown and organized into 11 logical sections. No content has been removed, filtered, or summarized — every command, configuration, warning, and note is preserved verbatim.
+This is the **entire [Qubes OS official documentation](https://github.com/QubesOS/qubes-doc)** (191 pages) **plus all 452 community guides from the [Qubes Forum](https://forum.qubes-os.org/c/guides/14)** — combined into a single AI-readable Markdown file (~3.6 MB, 80,000+ lines). No content has been removed, filtered, or summarized — every command, configuration, warning, and note is preserved verbatim.
 
 It's designed to be:
 
@@ -27,6 +27,7 @@ It's designed to be:
 | 9 | [Reference](#9-reference) | 2 | Glossary, command-line tools |
 | 10 | [Project Security](#10-project-security) | 3 | Security bulletins, PGP key verification, security pack |
 | 11 | [Developer Documentation](#11-developer-documentation) | 66 | Qubes Builder, architecture, qrexec internals, admin API, coding style |
+| 12 | [Community Guides (Forum)](#12-community-guides-forum) | 499 | VPNs, GPU passthrough, hardware guides, software tutorials, tips & tricks |
 
 ## How It Was Made
 
