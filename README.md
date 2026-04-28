@@ -1,76 +1,32 @@
 # Qubes OS Ultimate Guide
 
-> **Complete Qubes OS official documentation — compiled into a single, AI-readable Markdown file.**
+**为 AI / LLM 准备的 Qubes OS 知识大全。** 将官方文档和社区精华合并为单一 Markdown 文件，方便 AI 一次性加载、检索、回答 Qubes 相关问题。
 
-## What Is This?
+## 数据来源
 
-This is the **entire [Qubes OS official documentation](https://github.com/QubesOS/qubes-doc)** (191 pages) **plus all 452 community guides from the [Qubes Forum](https://forum.qubes-os.org/c/guides/14)** — combined into a single AI-readable Markdown file (~3.6 MB, 80,000+ lines). No content has been removed, filtered, or summarized — every command, configuration, warning, and note is preserved verbatim.
+| 来源 | 内容 | 数量 |
+|---|---|---|
+| [QubesOS/qubes-doc](https://github.com/QubesOS/qubes-doc) | Qubes OS 官方文档（RST → Markdown 转换） | 191 页 |
+| [forum.qubes-os.org/c/guides/14](https://forum.qubes-os.org/c/guides/14) | 社区论坛精华指南（全文爬取） | 499 篇 |
+| **合计** | | **690 篇 / ~4MB** |
 
-It's designed to be:
+> 全部原始内容一字未删，仅做格式转换与合并。内容截至 **2026-04-23**。
 
-- **AI-friendly** — load the whole file into an LLM context or RAG pipeline and query any Qubes topic
-- **Searchable** — `grep`, `Ctrl+F`, or semantic search across all Qubes docs at once
-- **Offline** — a single file you can read anywhere, no internet needed
+## 文件
 
-## Contents
+- **`qubes-guides.md`** — 主文件，3.95 MB，含完整目录索引，AI 可直接读取
+- `crawl_guides.py` — 论坛爬虫脚本
 
-| # | Section | Topics | Description |
-|---|---------|--------|-------------|
-| 1 | [Introduction](#1-introduction) | 13 | FAQ, getting started, support, code of conduct |
-| 2 | [Downloading & Installing](#2-downloading--installing) | 17 | Installation guide, system requirements, upgrade paths (2→4.3) |
-| 3 | [Hardware & System Requirements](#3-hardware--system-requirements) | 14 | Certified hardware, HCL, system requirements |
-| 4 | [How-to Guides](#4-how-to-guides) | 21 | USB devices, PCI devices, backups, file copying, disposables, updates |
-| 5 | [Security in Qubes](#5-security-in-qubes) | 9 | Split GPG, firewall, device security, anti-evil-maid, MFA, data leak prevention |
-| 6 | [Templates](#6-templates) | 11 | Fedora, Debian, Windows, minimal templates, XFCE |
-| 7 | [Advanced Topics](#7-advanced-topics) | 20 | Salt, bind-dirs, RPC policy, USB qubes, disk resize, standalone HVMs, i3/awesome/KDE |
-| 8 | [Troubleshooting](#8-troubleshooting) | 15 | Installation, UEFI, PCI, USB, GUI, disk, HVM, VM troubleshooting |
-| 9 | [Reference](#9-reference) | 2 | Glossary, command-line tools |
-| 10 | [Project Security](#10-project-security) | 3 | Security bulletins, PGP key verification, security pack |
-| 11 | [Developer Documentation](#11-developer-documentation) | 66 | Qubes Builder, architecture, qrexec internals, admin API, coding style |
-| 12 | [Community Guides (Forum)](#12-community-guides-forum) | 499 | VPNs, GPU passthrough, hardware guides, software tutorials, tips & tricks |
+## 使用方式
 
-## How It Was Made
-
-1. **Source**: Cloned from [QubesOS/qubes-doc](https://github.com/QubesOS/qubes-doc) official repository
-2. **Conversion**: Custom Python script converts RST → Markdown:
-   - Section headers (`===`, `---`, `~~~`) → `#`, `##`, `###`
-   - `.. code:: language` → ` ```language `
-   - `.. note::` / `.. warning::` / `.. important::` → blockquote admonitions
-   - Sphinx cross-references → italic text with paths
-   - Images, navigation, and build artifacts stripped (non-text content)
-3. **Organization**: 191 RST files grouped into 11 topical sections with a clickable Table of Contents
-4. **Quality**: Zero content loss — every command, step, and warning preserved
-
-## Content Date
-
-**As of 2026-04-23** — sourced from the Qubes OS documentation repository at that date.
-
-## Usage
-
-### For AI / LLM
-```bash
-# Load into Claude, ChatGPT, or any LLM via context/RAG
-# The TOC at the top helps the model navigate
+```
+# 喂给 AI — 作为上下文或 RAG 知识库
 cat qubes-guides.md
-```
 
-### For humans
-```bash
-# Search for any topic
+# 人肉搜索
 grep -i "split gpg" qubes-guides.md
-grep -i "usb qube" qubes-guides.md
-
-# Read in your favorite Markdown viewer
-glow qubes-guides.md
 ```
-
-### As a RAG knowledge base
-The hierarchical structure (`# Section` → `## Topic` → `### Subsection`) is ideal for chunking strategies.
 
 ## License
 
-Original content © Qubes OS Project. This compilation is a derivative work for educational and reference purposes.
-
----
-
-⭐ **Star this repo** if you find it useful! Contributions and updates welcome.
+原始内容 © Qubes OS Project。本仓库为教育和参考用途的衍生整理。
