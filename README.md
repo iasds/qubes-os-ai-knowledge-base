@@ -13,6 +13,8 @@
 > All original content preserved verbatim — formatting and merging only. Content as of **2026-04-23**.
 >
 > 📢 Qubes OS Chinese Telegram: [t.me/qubeszh](https://t.me/qubeszh)
+>
+> [中文版](README_zh.md)
 
 ## Files
 

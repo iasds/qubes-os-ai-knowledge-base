@@ -13,6 +13,8 @@
 > 全部原始内容一字未删，仅做格式转换与合并。内容截至 **2026-04-23**。
 >
 > 📢 Qubes OS 中文 Telegram 频道：[t.me/qubeszh](https://t.me/qubeszh)
+>
+> [English](README.md)
 
 ## 文件
 
