@@ -1,34 +1,34 @@
 # Qubes OS Ultimate Guide
 
-**为 AI / LLM 准备的 Qubes OS 知识大全。** 将官方文档和社区精华合并为单一 Markdown 文件，方便 AI 一次性加载、检索、回答 Qubes 相关问题。
+**A comprehensive Qubes OS knowledge base for AI / LLMs.** Official docs and community guides merged into a single Markdown file — load it once, query anything Qubes.
 
-## 数据来源
+## Sources
 
-| 来源 | 内容 | 数量 |
+| Source | Content | Count |
 |---|---|---|
-| [QubesOS/qubes-doc](https://github.com/QubesOS/qubes-doc) | Qubes OS 官方文档（RST → Markdown 转换） | 191 页 |
-| [forum.qubes-os.org/c/guides/14](https://forum.qubes-os.org/c/guides/14) | 社区论坛精华指南（全文爬取） | 499 篇 |
-| **合计** | | **690 篇 / ~4MB** |
+| [QubesOS/qubes-doc](https://github.com/QubesOS/qubes-doc) | Official documentation (RST → Markdown) | 191 pages |
+| [forum.qubes-os.org/c/guides/14](https://forum.qubes-os.org/c/guides/14) | Community forum guides (full crawl) | 499 posts |
+| **Total** | | **690 items / ~4MB** |
 
-> 全部原始内容一字未删，仅做格式转换与合并。内容截至 **2026-04-23**。
+> All original content preserved verbatim — formatting and merging only. Content as of **2026-04-23**.
 >
-> 📢 Qubes OS 中文 Telegram 频道：[t.me/qubeszh](https://t.me/qubeszh)
+> 📢 Qubes OS Chinese Telegram: [t.me/qubeszh](https://t.me/qubeszh)
 
-## 文件
+## Files
 
-- **`qubes-guides.md`** — 主文件，3.95 MB，含完整目录索引，AI 可直接读取
-- `crawl_guides.py` — 论坛爬虫脚本
+- **`qubes-guides.md`** — Main file, 3.95 MB, with full table of contents
+- `crawl_guides.py` — Forum crawler script
 
-## 使用方式
+## Usage
 
 ```
-# 喂给 AI — 作为上下文或 RAG 知识库
+# Feed to AI — as context or RAG knowledge base
 cat qubes-guides.md
 
-# 人肉搜索
+# Grep for humans
 grep -i "split gpg" qubes-guides.md
 ```
 
 ## License
 
-原始内容 © Qubes OS Project。本仓库为教育和参考用途的衍生整理。
+Original content © Qubes OS Project. This repo is a derivative compilation for educational and reference purposes.
