@@ -1,1 +1,5 @@
-大纲.md
+__pycache__/
+*.pyc
+*.pyo
+references/
+.progress_*
