@@ -14,6 +14,10 @@ cd "$REPO_DIR"
 DRY_RUN=false
 [ "${1:-}" = "--dry-run" ] && DRY_RUN=true && echo "=== DRY RUN MODE ==="
 
+# Ensure UTF-8 locale for Python unicode output
+export LANG=C.UTF-8
+export PYTHONIOENCODING=utf-8
+
 DATE_TAG=$(date +%Y-%m-%d)
 LOG="/tmp/qubes-crawl-${DATE_TAG}.log"
 exec > >(tee "$LOG") 2>&1
