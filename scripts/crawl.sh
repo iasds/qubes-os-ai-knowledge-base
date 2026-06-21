@@ -17,6 +17,7 @@ DRY_RUN=false
 # Ensure UTF-8 locale for Python unicode output
 export LANG=C.UTF-8
 export PYTHONIOENCODING=utf-8
+export PYTHONUNBUFFERED=1
 
 DATE_TAG=$(date +%Y-%m-%d)
 LOG="/tmp/qubes-crawl-${DATE_TAG}.log"
