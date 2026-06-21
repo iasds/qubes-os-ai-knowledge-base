@@ -16,7 +16,7 @@ FORUM_BASE = "https://forum.qubes-os.org"
 FORUM_DIR = KB_DIR / "forum"
 
 CATEGORY_WORKERS = 3
-DETAIL_WORKERS = 5     # conservative to avoid 429
+DETAIL_WORKERS = 2     # ultra-conservative to avoid 429
 
 _lock = threading.Lock()
 _done_count = 0

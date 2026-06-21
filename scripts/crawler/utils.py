@@ -12,7 +12,7 @@ KB_DIR = Path(__file__).parent.parent.parent / "kb"
 USER_AGENT = "Qubes-KB-Crawler/1.0 (github.com/iasds/qubes-os-ai-knowledge-base)"
 REQUEST_TIMEOUT = 60
 
-_REQUEST_DELAY = 0.5
+_REQUEST_DELAY = 1.0
 
 def _rate_limit():
     time.sleep(_REQUEST_DELAY)
