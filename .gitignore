@@ -1,0 +1,6 @@
+kb/
+release/
+.state-qubesdoc
+__pycache__/
+*.pyc
+
